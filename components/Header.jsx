@@ -6,8 +6,7 @@ class Header extends React.Component {
 
     //state are mutable
     this.state = {
-      header: "Header From State",
-      subHeader: "Sub_header From State"
+      header: "Header From State"
     }
   }
 
@@ -15,7 +14,7 @@ class Header extends React.Component {
       return (
          <div>
             <h1>{this.state.header}</h1>
-            <h2>{this.state.subHeader}</h2>
+            <h2>{this.props.headerProp}</h2>
          </div>
       );
    }

@@ -13,8 +13,7 @@ class Content extends React.Component {
 
 //Props are immutable
 Content.defaultProps = {
-  headerProp: "Header from props (immutable)",
-  contentProp: "Content from props (immutable)"
+  headerProp: "Header from local props (immutable)"
 }
 
 export default Content;

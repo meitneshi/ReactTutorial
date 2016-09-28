@@ -9,39 +9,40 @@ class App extends React.Component {
   constructor() {
     super();
 
-      this.state = {
-         data:[
-            {
-               "id":1,
-               "name":"John",
-               "age":"20"
-            },{
-               "id":2,
-               "name":"Mark",
-               "age":"30"
-            },{
-               "id":3,
-               "name":"Pat",
-               "age":"40"
-            }
-         ],
-         title: "This is a variable title"
-      }
-   }
+    this.state = {
+      data:[
+        {
+          "id":1,
+          "name":"John",
+          "age":"20"
+        },{
+          "id":2,
+          "name":"Mark",
+          "age":"30"
+        },{
+          "id":3,
+          "name":"Pat",
+          "age":"40"
+        }
+      ],
+      header: "Header from props...",
+      content: "Content from props..."
+    }
+  }
 
-   render() {
-      return (
-         <div>
-            <Header />
-            <Content />
-            <table>
-               <tbody>
-                  {this.state.data.map((person, i) => <TableRow key = {i} data = {person} />)}
-               </tbody>
-            </table>
-         </div>
-      );
-   }
+  render() {
+    return (
+      <div>
+        <Header headerProp = {this.state.header}/>
+        <Content contentProp = {this.state.content}/>
+        <table>
+          <tbody>
+            {this.state.data.map((person, i) => <TableRow key = {i} data = {person} />)}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
 }
 
 export default App;
