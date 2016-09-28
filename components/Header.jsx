@@ -4,6 +4,7 @@ class Header extends React.Component {
   constructor(props) {
     super (props);
 
+    //state are mutable
     this.state = {
       header: "Header From State",
       subHeader: "Sub_header From State"
