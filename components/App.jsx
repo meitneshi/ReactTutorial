@@ -5,6 +5,7 @@ import TableRow from './TableRow.jsx';
 import PropValidationExample from './PropValidationExample.jsx';
 import ComponentAPIExample from './ComponentAPIExample.jsx';
 import ComponentLifeCycleExample from './componentLifeCycle/ComponentLifeCycleExample.jsx';
+import ComplexFormComponent from './formComponent/ComplexFormComponent.jsx';
 
 
 class App extends React.Component {
@@ -62,6 +63,10 @@ class App extends React.Component {
         <hr/>
         Component Life Cycle
         <ComponentLifeCycleExample />
+
+        <hr/>
+        Forms : <br/>
+        <ComplexFormComponent />
       </div>
     );
   }
