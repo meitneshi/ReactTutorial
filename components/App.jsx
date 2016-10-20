@@ -3,7 +3,8 @@ import Header from './Header.jsx';
 import Content from './Content.jsx';
 import TableRow from './TableRow.jsx';
 import PropValidationExample from './PropValidationExample.jsx';
-import ComponentAPIExample from './ComponentAPIExample.jsx'
+import ComponentAPIExample from './ComponentAPIExample.jsx';
+import ComponentLifeCycleExample from './componentLifeCycle/ComponentLifeCycleExample.jsx';
 
 
 class App extends React.Component {
@@ -55,8 +56,12 @@ class App extends React.Component {
         <PropValidationExample />
 
         <hr/>
-        Component Api : 
+        Component Api :
         <ComponentAPIExample />
+
+        <hr/>
+        Component Life Cycle
+        <ComponentLifeCycleExample />
       </div>
     );
   }
