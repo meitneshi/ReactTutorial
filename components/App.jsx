@@ -3,6 +3,7 @@ import Header from './Header.jsx';
 import Content from './Content.jsx';
 import TableRow from './TableRow.jsx';
 import PropValidationExample from './PropValidationExample.jsx';
+import ComponentAPIExample from './ComponentAPIExample.jsx'
 
 
 class App extends React.Component {
@@ -34,14 +35,28 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        Component Header :
         <Header headerProp = {this.state.header}/>
+
+        <hr/>
+        Component Content :
         <Content contentProp = {this.state.content}/>
+
+        <hr/>
+        Table with component inside :
         <table>
           <tbody>
             {this.state.data.map((person, i) => <TableRow key = {i} data = {person} />)}
           </tbody>
         </table>
+
+        <hr/>
+        Prop Validation :
         <PropValidationExample />
+
+        <hr/>
+        Component Api : 
+        <ComponentAPIExample />
       </div>
     );
   }
